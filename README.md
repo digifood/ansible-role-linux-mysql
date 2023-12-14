@@ -52,7 +52,7 @@ To test this role we use [Vagrant](https://www.vagrantup.com/) and [Virtualbox](
 The first step is to download this repo and birng up all the VMs. But first in the Vagrantfile paste your public ssh key in the *CHANGE_ME* variable. You can also adjust the number of the vm deployed by changing the NNODES variable (in this exaple we will use 5 nodes). Now we are ready to provision the machines:
 
 ```
-git clone https://github.com/garutilorenzo/ansible-role-linux-mysql.git
+git clone https://github.com/digifood/ansible-role-linux-mysql.git
 
 cd ansible-role-linux-mysql/
 
@@ -104,7 +104,7 @@ pip install -r requirements.txt
 Now with Ansible installed we can download the role directly from GitHub:
 
 ```
-ansible-galaxy install git+https://github.com/garutilorenzo/ansible-role-linux-mysql.git
+ansible-galaxy install git+https://github.com/digifood/ansible-role-linux-mysql.git
 ```
 
 Whit Ansible and the role installed we can setup our inventory file (hosts.ini):
