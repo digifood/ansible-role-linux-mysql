@@ -7,10 +7,11 @@
     enabled: no
   when: disable_firewall
 
-#- name: Configure MySQL community repo
-#  ansible.builtin.apt:
-#    deb: "{{ mysql_repo_url[ansible_os_family] }}"
-#    state: present
+- name: Configure MySQL community repo
+ ansible.builtin.apt:
+   deb: "{{ mysql_repo_url[ansible_os_family] }}"
+   allow_unauthenticated: true
+   state: present
 
 - name: Populate service facts
   ansible.builtin.service_facts:
