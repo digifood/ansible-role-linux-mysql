@@ -43,7 +43,7 @@
     - name: Install MySQL
       ansible.builtin.package:
         name: 
-          - mysql-community-server
+          - mysql-server
         state: present
         update_cache: yes
 
