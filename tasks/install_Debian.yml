@@ -10,7 +10,7 @@
 - name: Configure MySQL community repo
   ansible.builtin.apt:
     deb: "{{ mysql_repo_url[ansible_os_family] }}"
-    allow_unauthenticated: true
+    allow_insecure: true
     state: present
 
 - name: Populate service facts
